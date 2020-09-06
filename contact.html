@@ -40,38 +40,37 @@
   <div class="w3-top">
     <div class="w3-bar w3-white w3-card" id="myNavbar">
       <a href="index.html"></a>
-
       <a href="index.html" class="w3-bar-item w3-wide" style="padding: 10px;">
         <img src="images/banner.png" alt="STARPLAN LOGO" width="250"></a>
       <!-- Right-sided navbar links -->
-      <div class="w3-right w3-hide-small" style="font-size: 1.2em;">
+      <div class="w3-right w3-hide-small w3-hide-medium">
         <a href="index.html" style="text-decoration: none" class="w3-bar-item w3-button button-padding"><i
             class="fa fa-home"></i>HOME</a>
         <a href="about.html" style="text-decoration: none" class="w3-bar-item w3-button button-padding"><i
             class="fa fa-info-circle"></i>ABOUT</a>
         <a href="team.html" style="text-decoration: none" class="w3-bar-item w3-button button-padding"><i
             class="fa fa-users"></i>TEAM</a>
-            <a href="solutions.html" style="text-decoration: none" class="w3-bar-item w3-button button-padding"><i
-              class="fa fa-th"></i>SOLUTIONS</a>
+        <a href="solutions.html" style="text-decoration: none" class="w3-bar-item w3-button button-padding"><i
+            class="fa fa-th"></i>SOLUTIONS</a>
         <a href="contact.html" style="text-decoration: none" class="w3-bar-item w3-button button-padding"><i
             class="fa fa-envelope"></i>CONTACT</a>
-
       </div>
-
+      <a href="javascript:void(0)" class="w3-bar-item w3-button w3-right w3-hide-large " onclick="w3_open()">
+        <i class="fa fa-bars"></i>
       </a>
     </div>
   </div>
 
   <!-- Sidebar on small screens when clicking the menu icon -->
-  <nav class="w3-sidebar w3-bar-block w3-black w3-card w3-animate-left w3-hide-medium w3-hide-large"
-    style="display:none" id="mySidebar">
+  <nav class="w3-sidebar w3-bar-block w3-black w3-card w3-animate-left w3-hide-large" style="display:none"
+    id="mySidebar">
     <a href="javascript:void(0)" onclick="w3_close()" style="text-decoration: none"
       class="w3-bar-item w3-button w3-large w3-padding-16">Close ×</a>
     <a href="index.html" onclick="w3_close()" style="text-decoration: none" class="w3-bar-item w3-button">HOME</a>
     <a href="about.html" onclick="w3_close()" style="text-decoration: none" class="w3-bar-item w3-button">ABOUT</a>
     <a href="team.html" onclick="w3_close()" style="text-decoration: none" class="w3-bar-item w3-button">TEAM</a>
-    <a href="products.html" onclick="w3_close()" style="text-decoration: none"
-      class="w3-bar-item w3-button">PRODUCTS</a>
+    <a href="solutions.html" onclick="w3_close()" style="text-decoration: none"
+      class="w3-bar-item w3-button">SOLUTIONS</a>
     <a href="contact.html" onclick="w3_close()" style="text-decoration: none" class="w3-bar-item w3-button">CONTACT</a>
   </nav>
   <br> <br>
@@ -96,9 +95,12 @@
         <br>
 
         <form action="https://airform.io/starplan.2020@gmail.com" method="post">
-          <p style="margin: 50px 100px 10px;"><input type="text" class="w3-input w3-border" name="name" placeholder="Enter your name"></p>
-          <p style="margin: 0 100px;"><textarea name="message" class="w3-input w3-border" placeholder="Enter your message"></textarea></p>
-          <p class="w3-center"><button class="w3-button w3-black"> <i class="fa fa-paper-plane gradient style1"></i> SEND MESSAGE
+          <p style="margin: 50px 100px 10px;"><input type="text" class="w3-input w3-border" name="name"
+              placeholder="Enter your name"></p>
+          <p style="margin: 0 100px;"><textarea name="message" class="w3-input w3-border"
+              placeholder="Enter your message"></textarea></p>
+          <p class="w3-center"><button class="w3-button w3-black"> <i class="fa fa-paper-plane gradient style1"></i>
+              SEND MESSAGE
             </button></p>
         </form>
 
