@@ -39,3 +39,53 @@ html {
 i {
   margin-right: 5px;
 }
+
+.btn-circle {
+    width: 30px;
+    height: 30px;
+    padding: 6px 0px;
+    border-radius: 15px;
+    text-align: center;
+    font-size: 12px;
+    line-height: 1.42857;
+
+/* Clear floats after image containers */
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+.stakeholders
+{
+display: inline-block;
+margin: 0px;
+padding: 0px;
+}
+
+#stakeholders
+{
+display: block;
+margin: 0px;
+padding: 0px;
+position: relative;
+top: 90px;
+max-height: 150px;
+max-width: 150px;
+overflow-y: hidden;
+overflow-x:auto;
+white-space:nowrap;
+}
+
+/* Container holding the image and the text */
+.container {
+  position: relative;
+  text-align: center;
+  color: white;
+}
+
+/* Bottom left text */
+.bottom-left {
+  position: absolute;
+  bottom: 8px;
+  left: 16px;
+}

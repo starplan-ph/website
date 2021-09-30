@@ -10,6 +10,8 @@
 <link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Open+Sans&family=Roboto&display=swap"
     rel="stylesheet">
 <link rel="icon" href="images/favicon.ico">
+<script src="https://kit.fontawesome.com/yourcode.js" crossorigin="anonymous"></script>
+
 
 
 <body>
@@ -25,8 +27,8 @@
                         class="fa fa-home"></i>HOME</a>
                 <a href="about.html" style="text-decoration: none" class="w3-bar-item w3-button button-padding"><i
                         class="fa fa-info-circle"></i>ABOUT</a>
-                <a href="members.html" style="text-decoration: none" class="w3-bar-item w3-button button-padding"><i
-                        class="fa fa-users"></i>TEAM</a>
+                <!-- <a href="members.html" style="text-decoration: none" class="w3-bar-item w3-button button-padding"><i
+                        class="fa fa-users"></i>TEAM</a> -->
                 <a href="solutions.html" style="text-decoration: none" class="w3-bar-item w3-button button-padding"><i
                         class="fa fa-th"></i>SOLUTIONS</a>
                 <a href="downloads.html" style="text-decoration: none" class="w3-bar-item w3-button button-padding"><i
@@ -48,7 +50,7 @@
             class="w3-bar-item w3-button w3-large w3-padding-16">Close ×</a>
         <a href="index.html" onclick="w3_close()" style="text-decoration: none" class="w3-bar-item w3-button">HOME</a>
         <a href="about.html" onclick="w3_close()" style="text-decoration: none" class="w3-bar-item w3-button">ABOUT</a>
-        <a href="members.html" onclick="w3_close()" style="text-decoration: none" class="w3-bar-item w3-button">TEAM</a>
+        <!-- <a href="members.html" onclick="w3_close()" style="text-decoration: none" class="w3-bar-item w3-button">TEAM</a> -->
         <a href="solutions.html" onclick="w3_close()" style="text-decoration: none"
             class="w3-bar-item w3-button">SOLUTIONS</a>
         <a href="downloads.html" onclick="w3_close()" style="text-decoration: none"
@@ -60,7 +62,7 @@
     <!-- Header with full-height image -->
     <header class="bgimg-1 w3-display-container">
         <div class="w3-display-left w3-text-white"
-            style="padding:30px; width: 100%; background-color: rgba(0, 0, 0, 0.75);">
+            style="padding:30px; padding-top: 100px; padding-bottom: 100px; width: 100%; background-color: rgba(0, 0, 0, 0.75);">
             <span class="w3-xxlarge w3-hide-small w3-hide-medium"><b>SUSTAINABLE TECHNOLOGY-ASSISTED ROUTE
                     PLANNING</b></span><br>
             <span class="w3-xxlarge w3-hide-large"><b>SUSTAINABLE TECHNOLOGY-ASSISTED ROUTE
@@ -74,18 +76,81 @@
             <p class="w3-text-white w3-xlarge">
                 <a href="https://www.facebook.com/starplan.official"><i
                         class="fa fa-facebook-official style2 w3-hover-opacity"></i></a>
-                <i class="fa fa-linkedin style2 w3-hover-opacity"></i>
+                <!-- <i class="fa fa-linkedin style2 w3-hover-opacity"></i> -->
                 <a href="contact.html"><i class="fa fa-envelope style2 w3-hover-opacity"></i></a>
             </p>
 
         </div>
     </header>
 
+    <!-- About Section -->
+    <div class="w3-container" style="padding:128px 16px" id="about">
+        <h3 class="w3-center">INTELLIGENT TRANSPORTATION SYSTEM SOLUTIONS FOR SMART CITIES</h3>
+        <p class="w3-center w3-large">Smart systems developed to improve efficiency </p>
+        <div class="w3-row-padding w3-center" style="margin-top:64px">
+            <div class="w3-quarter">
+                <img src="images/dashboard.svg" alt="" width="200rem">
+                <p class="w3-large"><b> Public Transportation Fleet Management</b></p>
+                <p>Efficiently dispatch public utility vehicles based on data analytics.</p>
+            </div>
+            <div class="w3-quarter">
+                <img src="images/map.svg" alt="" width="200rem">
+                <p class="w3-large"><b>Traveller Information System</b> </p>
+                <p>Integrated transport services for the Convenience of local travellers or tourists.</p>
+            </div>
+            <div class="w3-quarter">
+                <img src="images/project.svg" alt="" width="200rem">
+                <p class="w3-large"><b>Intelligent Devices</b></p>
+                <p>Real-time detection and counting of boarding and alighting passengers.</p>
+                </p>
+            </div>
+            <div class="w3-quarter">
+                <img src="images/report.svg" alt="" width="200rem">
+                <p class="w3-large"><b>Economic Assessment</b></p>
+                <p>Model, asses, and quantify proposed major infrastructure projects based on economic assessment tools.
+                </p>
+            </div>
+        </div>
+    </div>
 
     <!-- Products Section -->
-    <div class="w3-container w3-light-grey" style="padding:70px 20px">
-        <div class="w3-row-padding">
-            <div class="w3-col m6">
+    <div class="w3-container w3-light-grey" style="padding-top:50px; padding-bottom:50px">
+        <h3 class="w3-center"><b>NEWS AND UPDATES</b></h3>
+            <!-- <button type="button" class="btn btn-circle">
+                <i class="fas fa-chevron-circle-left"></i>
+            </button> -->
+            <div class="row">
+                <!-- <div class="column" style="float: left; width:25%; padding: 10px">
+                    <img class="w3-image w3-round-large" src="images/news/webinar.jpg" alt="News 1"
+                    style="margin-left: 5px;" width="400rem">
+                    <div class="bottom-left">
+                        <p>DOST PCIEERD and STARPLAN Team Online Workshop<br>September 2021</p>
+                    </div>
+                </div>
+                <div class="column" style="float: left; width:25%; padding: 10px">
+                    <img class="w3-image w3-round-large" src="images/news/webinar.jpg" alt="News 1"
+                    style="margin-left: 5px;" width="400rem">
+                    <div class="bottom-left">
+                        <p>DOST PCIEERD and STARPLAN Team Online Workshop<br>September 2021</p>
+                    </div>
+                </div>
+                <div class="column" style="float: left; width:25%; padding: 10px">
+                    <img class="w3-image w3-round-large" src="images/news/webinar.jpg" alt="News 1"
+                    style="margin-left: 5px;" width="400rem">
+                    <div class="bottom-left">
+                        <p>DOST PCIEERD and STARPLAN Team Online Workshop<br>September 2021</p>
+                    </div>
+                </div> -->
+                <div class="column" style="float: left; width:25%; padding: 10px">
+                    <img class="w3-image w3-round-large" src="images/news/webinar.jpg" alt="News 1"
+                    style="margin-left: 5px;" width="400rem">
+                    <div class="bottom-left">
+                        <a href="downloads.html">DOST PCIEERD and STARPLAN Team Online Workshop<br>September 2021</a>
+                    </div>
+                </div>
+            </div>
+            </span>
+            <!-- <div class="w3-col m6">
                 <h3><b>NEWS AND UPDATES</b></h3>
                 <p style="text-align: justify; padding-right: 20px;">
                     The DOST PCIEERD together with the Sustainable Technology-Assisted Route Planning Team conducted an
@@ -113,49 +178,15 @@
             <div class="w3-col m6">
                 <img class="w3-image w3-round-large" src="images/news/webinar.jpg" alt="Buildings"
                     style="margin-left: 50px;" width="400">
-
-            </div>
-        </div>
+            </div> -->
     </div>
-
-
-    <!-- About Section -->
-    <div class="w3-container" style="padding:128px 16px" id="about">
-        <h3 class="w3-center">INTELLIGENT TRANSPORTATION SYSTEM SOLUTIONS FOR SMART CITIES</h3>
-        <p class="w3-center w3-large">Smart systems developed to improve efficiency </p>
-        <div class="w3-row-padding w3-center" style="margin-top:64px">
-            <div class="w3-quarter">
-                <img src="images/dashboard.svg" alt="" width="200px">
-                <p class="w3-large"><b> Fleet Management</b></p>
-                <p>Efficiently dispatch public utility vehicles based on data analytics.</p>
-            </div>
-            <div class="w3-quarter">
-                <img src="images/map.svg" alt="" width="200px">
-                <p class="w3-large"><b>Traveller Information System</b> </p>
-                <p>Integrated transport services for the Convenience of local travellers or tourists.</p>
-            </div>
-            <div class="w3-quarter">
-                <img src="images/project.svg" alt="" width="200px">
-                <p class="w3-large"><b>Advanced Technologies</b></p>
-                <p>Real-time detection and counting of boarding and alighting passengers.</p>
-                </p>
-            </div>
-            <div class="w3-quarter">
-                <img src="images/report.svg" alt="" width="200px">
-                <p class="w3-large"><b>Economic Assessment</b></p>
-                <p>Model, asses, and quantify proposed major infrastructure projects based on economic assessment tools.
-                </p>
-            </div>
-        </div>
-    </div>
-
 
     <footer class="w3-center w3-black w3-padding-small">
         <div class="w3-xlarge w3-section">
             <p class="w3-text-white w3-xlarge">
                 <a href="https://www.facebook.com/starplan.official"><i
                         class="fa fa-facebook-official style2 w3-hover-opacity "></i></a>
-                <i class="fa fa-linkedin style2 w3-hover-opacity"></i>
+                <!-- <i class="fa fa-linkedin style2 w3-hover-opacity"></i> -->
                 <a href="contact.html"><i class="fa fa-envelope style2 w3-hover-opacity"></i></a>
             </p>
         </div>
