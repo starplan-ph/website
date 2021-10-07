@@ -7,9 +7,12 @@
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <link rel="stylesheet" href="master.css">
+<link rel="stylesheet" href="btn.css">
 <link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Open+Sans&family=Roboto&display=swap"
     rel="stylesheet">
 <link rel="icon" href="images/favicon.ico">
+<script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
+<script src="https://kit.fontawesome.com/e088c19dc2.js" crossorigin="anonymous"></script>
 
 
 <body>
@@ -85,9 +88,9 @@
             </div> -->
             <div class="w3-col m6">
                 <img class="w3-image w3-round-large" src="images/products/Atlas2.png"
-                    style="margin-right: 10px; float: right;" alt="User Interface" width="200">
+                    style="margin-right: 10px; float: right; box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.1);" alt="User Interface" width="200">
                 <img class="w3-image w3-round-large" src="images/products/Atlas.PNG"
-                    style="margin-right: 10px; float: right;" alt="User Interface" width="200">
+                    style="margin-right: 10px; float: right; box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.1);" alt="User Interface" width="200">
             </div>
         </div>
     </div>
@@ -111,10 +114,18 @@
                         class="w3-button w3-black"><i class="fa fa-th"> </i> Request Demo</a>
                 </p>
             </div>
-            <div class="w3-col m6">
-                <img class="w3-image w3-round-large" style="float: right;" src="images/products/visualdatamap.png"
-                    alt="visualdatamap" width="450">
+            <div class="buttonimage">
+                <button class="btn" onclick="document.getElementById('visualdatamap').src='images/products/visualdatamap.png'"><i class="fas fa-chevron-left"></i></button>
+
+                <img class="w3-image w3-round-large" style="box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.1);"; src="images/products/visualdatamap.png"
+                alt="visualdatamap" width="450px" id="visualdatamap">
+
+                <button class="btn" onclick="document.getElementById('visualdatamap').src='images/products/routemaps.jpg'" style="display: inline-block; padding"><i class="fas fa-chevron-right"></i></button>
             </div>
+            <!-- <div class="w3-col m6">
+                <img class="w3-image w3-round-large" style="float: right; box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.1);" src="images/products/visualdatamap.png"
+                    alt="visualdatamap" width="450">
+            </div> -->
         </div>
     </div>
 
@@ -125,7 +136,6 @@
                 <p style="text-align: justify;">
                     Real-time detection and counting of boarding and alighting passengers using:
                 </p>
-
                 <ul>
                     <li>Raspberry Pi 4B</li>
                     <li>NVIDIA Jetson Nano</li>
@@ -134,16 +144,13 @@
                         class="w3-button w3-black"><i class="fa fa-th"> </i> Request Demo</a>
                 </p>
             </div>
-            <div class="w3-col m6">
-                <img class="w3-image w3-round-large" style="float: right;" src="images/products/edgedevice.jpg"
-                    alt="edgedevice" width="450">
-            </div>
-<!--                 <img class="w3-image w3-round-large" src="images/products/atlas-us-fl.png"
-                    style="margin-right: 10px; float: right;" alt="User Interface" width="140">
-                <img class="w3-image w3-round-large" src="images/products/atlas-us-ho.PNG"
-                    style="margin-right: 10px; float: right;" alt="User Interface" width="140">
-                <img class="w3-image w3-round-large" src="images/products/atlas-us-na.png"
-                    style="margin-right: 10px; float: right;" alt="User Interface" width="140"> -->
+            <div class="buttonimage">
+                <button class="btn" onclick="document.getElementById('edgedevice').src='images/products/rpi.jpg'"><i class="fas fa-chevron-left"></i></button>
+
+                <img class="w3-image w3-round-large" style="box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.1);"; src="images/products/jetson.jpg"
+                alt="NVIDIA Jetson Nano" width="450px" id="edgedevice">
+
+                <button class="btn" onclick="document.getElementById('edgedevice').src='images/products/jetson.jpg'" style="display: inline-block; padding"><i class="fas fa-chevron-right"></i></button>
             </div>
         </div>
     </div>
@@ -165,7 +172,7 @@
                 </p>
             </div>
             <div class="w3-col m6">
-                <img class="w3-image w3-round-large" style="float: right;" src="images/products/passengercounter.gif"
+                <img class="w3-image w3-round-large" style="float: right; box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.1);" src="images/products/passengercounter.gif"
                     alt="demo video" width="450">
             </div>
         </div>
@@ -188,8 +195,7 @@
             </div>
             <div class="w3-col m6">
                 <img class="w3-image w3-round-large" src="images/products/emme4.png"
-                    style="margin-right: 10px; float: right;" alt="sample-pic" width="450">
-
+                    style="margin-right: 10px; float: right; box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.1);" alt="emme4" width="450">
             </div>
         </div>
     </div>
@@ -210,7 +216,8 @@
                 </p>
             </div>
             <div class="w3-col m6">
-
+                <img class="w3-image w3-round-large" src="images/products/econassessment.png"
+                    style="margin-right: 10px; float: right; box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.1);" alt="econassessment" width="450">
             </div>
         </div>
     </div>
@@ -250,6 +257,19 @@
         </div>
         <p>© STARPLAN. All rights reserved.</a></p>
     </footer>
+    <script type="text/javascript">
+    var imgchange = '1';
+    function change(){
+        var deviceimg = document.getElementById('edgedevice');
+        if (imgchange == '1'){
+            deviceimg.src = 'images/products/rpi.jpg';
+            var imgchange = '2';
+        } else{
+            deviceimg.src = 'images/products/jetson.jpg';
+            var imgchange = '1';
+        }
+    }
+</script>
 
     <script>
         // Modal Image Gallery

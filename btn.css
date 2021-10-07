@@ -1,0 +1,39 @@
+.btn {
+  text-decoration: none;
+  display: inline-block;
+  padding: 8px 16px;
+  z-index: 9999;
+  position: relative;
+  background: none;
+  border: none;
+  border-radius: 50%;
+}
+
+.btn:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.previous {
+  background-color: #f1f1f1;
+  color: black;
+}
+
+.next {
+  background-color: #04AA6D;
+  color: white;
+}
+
+.round {
+  border-radius: 0%;
+
+}
+
+.buttonimage{
+  background-color: ;
+  width: 560px;
+  height: 100%;
+  margin: 0 0 0 0;
+  float: right;
+  margin-right: -55px;
+}

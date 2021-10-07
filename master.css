@@ -89,3 +89,16 @@ white-space:nowrap;
   bottom: 8px;
   left: 16px;
 }
+
+#solutions image crop
+.crop {
+  width: 450px;
+  height: 150px;
+  overflow: hidden;
+}
+
+.crop img {
+  width: 450px;
+  height: 300px;
+  margin: -75px 0 0 -100px;
+}
