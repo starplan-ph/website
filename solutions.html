@@ -13,6 +13,18 @@
 <link rel="icon" href="images/favicon.ico">
 <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
 <script src="https://kit.fontawesome.com/e088c19dc2.js" crossorigin="anonymous"></script>
+<style>
+.mySlides {
+    display:none
+    margin-right: 10px;
+}
+.mySlides2 {
+    display:none
+    margin-right: 10px;
+}
+.w3-left, .w3-right, .w3-badge {cursor:pointer}
+.w3-badge {height:13px;width:13px;padding:0}
+</style>
 
 
 <body>
@@ -114,17 +126,23 @@
                         class="w3-button w3-black"><i class="fa fa-th"> </i> Request Demo</a>
                 </p>
             </div>
-            <div class="buttonimage">
+            <div class="w3-content w3-display-container" style="max-width:450px; float: right; margin-right: 10px;">
+                <img class="mySlides2 w3-round-large" src="images/products/visualdatamap.png" style="width:100%; height: 350px; box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.1);">
+                <img class="mySlides2 w3-round-large" src="images/products/routemaps.jpg" style="width:100%; height: 350px; box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.1);">
+                <div class="w3-center w3-container w3-section w3-large w3-text-white w3-display-bottommiddle" style="width:100%">
+                    <div class="w3-left w3-hover-text-khaki" onclick="plusDivs2(-1)">&#10094;</div>
+                    <div class="w3-right w3-hover-text-khaki" onclick="plusDivs2(1)">&#10095;</div>
+                    <span class="w3-badge demo2 w3-border w3-transparent w3-hover-white" onclick="currentDiv2(3)"></span>
+                    <span class="w3-badge demo2 w3-border w3-transparent w3-hover-white" onclick="currentDiv2(4)"></span>
+                </div>
+            </div>
+            <!-- <div class="buttonimage">
                 <button class="btn" onclick="document.getElementById('visualdatamap').src='images/products/visualdatamap.png'"><i class="fas fa-chevron-left"></i></button>
 
                 <img class="w3-image w3-round-large" style="box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.1);"; src="images/products/visualdatamap.png"
                 alt="visualdatamap" width="450px" id="visualdatamap">
 
                 <button class="btn" onclick="document.getElementById('visualdatamap').src='images/products/routemaps.jpg'" style="display: inline-block; padding"><i class="fas fa-chevron-right"></i></button>
-            </div>
-            <!-- <div class="w3-col m6">
-                <img class="w3-image w3-round-large" style="float: right; box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.1);" src="images/products/visualdatamap.png"
-                    alt="visualdatamap" width="450">
             </div> -->
         </div>
     </div>
@@ -144,14 +162,24 @@
                         class="w3-button w3-black"><i class="fa fa-th"> </i> Request Demo</a>
                 </p>
             </div>
-            <div class="buttonimage">
+            <div class="w3-content w3-display-container" style="max-width:450px; float: right; margin-right: 10px;">
+                <img class="mySlides w3-round-large" src="images/products/rpi.jpg" style="width:100%; box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.1);">
+                <img class="mySlides w3-round-large" src="images/products/jetson.jpg" style="width:100%; box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.1);">
+                <div class="w3-center w3-container w3-section w3-large w3-text-white w3-display-bottommiddle" style="width:100%">
+                    <div class="w3-left w3-hover-text-khaki" onclick="plusDivs(-1)">&#10094;</div>
+                    <div class="w3-right w3-hover-text-khaki" onclick="plusDivs(1)">&#10095;</div>
+                    <span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(1)"></span>
+                    <span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(2)"></span>
+                </div>
+            </div>
+            <!-- <div class="buttonimage">
                 <button class="btn" onclick="document.getElementById('edgedevice').src='images/products/rpi.jpg'"><i class="fas fa-chevron-left"></i></button>
 
                 <img class="w3-image w3-round-large" style="box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.1);"; src="images/products/jetson.jpg"
                 alt="NVIDIA Jetson Nano" width="450px" id="edgedevice">
 
                 <button class="btn" onclick="document.getElementById('edgedevice').src='images/products/jetson.jpg'" style="display: inline-block; padding"><i class="fas fa-chevron-right"></i></button>
-            </div>
+            </div> -->
         </div>
     </div>
 
@@ -257,19 +285,62 @@
         </div>
         <p>© STARPLAN. All rights reserved.</a></p>
     </footer>
-    <script type="text/javascript">
-    var imgchange = '1';
-    function change(){
-        var deviceimg = document.getElementById('edgedevice');
-        if (imgchange == '1'){
-            deviceimg.src = 'images/products/rpi.jpg';
-            var imgchange = '2';
-        } else{
-            deviceimg.src = 'images/products/jetson.jpg';
-            var imgchange = '1';
+        <script>
+        var slideIndex2 = 3;
+        showDivs2(slideIndex2);
+
+        function plusDivs2(n) {
+          showDivs2(slideIndex2 += n);
         }
-    }
-</script>
+
+        function currentDiv2(n) {
+          showDivs2(slideIndex2 = n);
+        }
+
+        function showDivs2(n) {
+          var i;
+          var x = document.getElementsByClassName("mySlides2");
+          var dots = document.getElementsByClassName("demo2");
+          if (n > x.length) {slideIndex2 = 1}
+          if (n < 1) {slideIndex2 = x.length}
+          for (i = 0; i < x.length; i++) {
+            x[i].style.display = "none";  
+          }
+          for (i = 0; i < dots.length; i++) {
+            dots[i].className = dots[i].className.replace(" w3-white", "");
+          }
+          x[slideIndex2-1].style.display = "block";  
+          dots[slideIndex2-1].className += " w3-white";
+        }
+    </script>
+    <script>
+        var slideIndex = 1;
+        showDivs(slideIndex);
+
+        function plusDivs(n) {
+          showDivs(slideIndex += n);
+        }
+
+        function currentDiv(n) {
+          showDivs(slideIndex = n);
+        }
+
+        function showDivs(n) {
+          var i;
+          var x = document.getElementsByClassName("mySlides");
+          var dots = document.getElementsByClassName("demo");
+          if (n > x.length) {slideIndex = 1}
+          if (n < 1) {slideIndex = x.length}
+          for (i = 0; i < x.length; i++) {
+            x[i].style.display = "none";  
+          }
+          for (i = 0; i < dots.length; i++) {
+            dots[i].className = dots[i].className.replace(" w3-white", "");
+          }
+          x[slideIndex-1].style.display = "block";  
+          dots[slideIndex-1].className += " w3-white";
+        }
+    </script>
 
     <script>
         // Modal Image Gallery
