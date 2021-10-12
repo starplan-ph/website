@@ -10,6 +10,15 @@
 <link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Open+Sans&family=Roboto&display=swap"
     rel="stylesheet">
 <link rel="icon" href="images/favicon.ico">
+<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.css"/>
+<link rel="stylesheet" type="text/css" href="http://kenwheeler.github.io/slick/slick/slick-theme.css"/>
+<style type="text/css">
+    .slick-prev:before, .slick-next:before{
+        color: lightgray;
+        font-size: 30px;
+    }
+</style>
+
 <script src="https://kit.fontawesome.com/yourcode.js" crossorigin="anonymous"></script>
 
 
@@ -114,9 +123,17 @@
     </div>
 
     <!-- Products Section -->
-    <div class="w3-container w3-light-grey" style="padding-top:50px; padding-bottom:50px">
+    <div class="w3-container w3-light-grey" style="padding-top:50px; padding-bottom:50px;">
+        <div style="margin-left: 50px; margin-right: 50px;">
         <h3 class="w3-center"><b>NEWS AND UPDATES</b></h3>
-            <div class="row">
+            <div class="multiple-items">
+                <div class="column" style="float: left; width:25%; padding: 20px;">
+                    <img class="w3-image w3-round-large" src="images/news/onlineworkshoppub.png" alt="News 4"
+                    style="margin-left: 5px; box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.1); height: 200px; object-fit: cover; object-position: top; width: 400px;" >
+                    <div class="bottom-left">
+                        <a href="downloads.html">STARPLAN Team Online Workshop<br>August 2021</a>
+                    </div>
+                </div>
                 <div class="column" style="float: left; width:25%; padding: 20px;">
                     <img class="w3-image w3-round-large" src="images/news/onlineworkshoppub.png" alt="News 4"
                     style="margin-left: 5px; box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.1); height: 200px; object-fit: cover; object-position: top; width: 400px;" >
@@ -147,6 +164,7 @@
                 </div>
             </div>
             </span>
+        </div>
     </div>
 
     <footer class="w3-center w3-black w3-padding-small">
@@ -160,6 +178,18 @@
         </div>
         <p>© STARPLAN. All rights reserved.</a></p>
     </footer>
+
+
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+    <script type="text/javascript"> 
+        $('.multiple-items').slick({
+          infinite: true,
+          slidesToShow: 4,
+          slidesToScroll: 1
+        });
+    </script>
 
     <script>
         // Modal Image Gallery
