@@ -13,12 +13,24 @@
 <link rel="icon" href="images/favicon.ico">
 <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
 <script src="https://kit.fontawesome.com/e088c19dc2.js" crossorigin="anonymous"></script>
+<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.css"/>
+<link rel="stylesheet" type="text/css" href="http://kenwheeler.github.io/slick/slick/slick-theme.css"/>
+<style type="text/css">
+    .slick-prev:before, .slick-next:before{
+        color: lightgray;
+        font-size: 30px;
+    }
+</style>
 <style>
 .mySlides {
     display:none
     margin-right: 10px;
 }
 .mySlides2 {
+    display:none
+    margin-right: 10px;
+}
+.mySlides3 {
     display:none
     margin-right: 10px;
 }
@@ -29,6 +41,10 @@
     height:13px;
     width:13px;
     padding:0;
+}
+.w3-badge, .demo3, .w3-border, .w3-transparent, .w3-hover {
+    background-color:#000000;
+    color:#000000;
 }
 </style>
 
@@ -100,16 +116,41 @@
                         class="w3-button w3-black"><i class="fa fa-th"> </i> Request Demo</a>
                 </p>
             </div>
-            <!-- <div class="w3-col m6">
-                <img class="w3-image w3-round-large" style="float: right;" src="images/products/atlas-op.jpeg"
-                    alt="User Interface" width="450">
-            </div> -->
-            <div class="w3-col m6">
-                <img class="w3-image w3-round-large" src="images/products/atlas1.png"
-                    style="margin-right: 10px; height: 375px; float: right; box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.1);" alt="User Interface" width="200">
-                <img class="w3-image w3-round-large" src="images/products/atlas.png"
-                    style="margin-right: 10px; height: 375px; float: right; box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.1);" alt="User Interface" width="200">
+            <div class="w3-content w3-display-container" style="max-width:500px; float: right; margin-right: 130px;">
+                <img class="mySlides3 w3-round-large" src="images/products/ATLASUSER/Page 01a - Splash.png" style="width:100%; height: 350px; box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.1);">
+                <img class="mySlides3 w3-round-large" src="images/products/ATLASUSER/Page 03 - Welcome.png" style="width:100%; height: 350px; box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.1);">
+                <img class="mySlides3 w3-round-large" src="images/products/ATLASUSER/Page 04a - Dash 1.png" style="width:100%; height: 350px; box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.1);">
+                <img class="mySlides3 w3-round-large" src="images/products/ATLASUSER/Page 04a - Dash 3.png" style="width:100%; height: 350px; box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.1);">
+                <img class="mySlides3 w3-round-large" src="images/products/ATLASUSER/Page 04a - Dash 5.png" style="width:100%; height: 350px; box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.1);">
+                <img class="mySlides3 w3-round-large" src="images/products/atlas1.png" style="width:100%; height: 350px; box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.1);">
+
+                <div class="w3-center w3-container w3-section w3-large w3-text-black w3-display-bottommiddle" style="width:100%">
+                    <div class="w3-left w3-hover-text-khaki" onclick="plusDivs3(-1)" style="font-size: x-large;">&#10094;</div>
+                    <div class="w3-right w3-hover-text-khaki" onclick="plusDivs3(1)" style="font-size: x-large;">&#10095;</div>
+                    <span class="w3-badge demo3 w3-border w3-transparent w3-hover-white" onclick="currentDiv3(5)"></span>
+                    <span class="w3-badge demo3 w3-border w3-transparent w3-hover-white" onclick="currentDiv3(6)"></span>
+                    <span class="w3-badge demo3 w3-border w3-transparent w3-hover-white" onclick="currentDiv3(7)"></span>
+                    <span class="w3-badge demo3 w3-border w3-transparent w3-hover-white" onclick="currentDiv3(8)"></span>
+                    <span class="w3-badge demo3 w3-border w3-transparent w3-hover-white" onclick="currentDiv3(9)"></span>
+                    <span class="w3-badge demo3 w3-border w3-transparent w3-hover-white" onclick="currentDiv3(10)"></span>
+                </div>
             </div>
+                <!--<img class="mySlides3 w3-image w3-round-large" src="images/products/ATLASUSER/Page 01a - Splash.png"
+                    style="margin-right: 10px; height: 375px; float: right; box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.1);" alt="User Interface" width="200">
+                <img class="mySlides3 w3-image w3-round-large" src="images/products/ATLASUSER/Page 03 - Welcome.png"
+                    style="margin-right: 10px; height: 375px; float: right; box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.1);" alt="User Interface" width="200">
+                <img class="mySlides3 w3-image w3-round-large" src="images/products/ATLASUSER/Page 04a - Dash 1.png"
+                    style="margin-right: 10px; height: 375px; float: right; box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.1);" alt="User Interface" width="200">
+                <img class="mySlides3 w3-image w3-round-large" src="images/products/ATLASUSER/Page 04a - Dash 3.png"
+                    style="margin-right: 10px; height: 375px; float: right; box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.1);" alt="User Interface" width="200">
+                <img class="mySlides3 w3-image w3-round-large" src="images/products/ATLASUSER/Page 04a - Dash 5.png"
+                    style="margin-right: 10px; height: 375px; float: right; box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.1);" alt="User Interface" width="200">  -->            
+                <!-- <div class="w3-center w3-container w3-section w3-large w3-text-white w3-display-bottommiddle" style="width:100%">
+                    <div class="w3-left w3-hover-text-khaki" onclick="plusDivs3(-1)" style="font-size: x-large;">&#10094;</div>
+                    <div class="w3-right w3-hover-text-khaki" onclick="plusDivs3(1)" style="font-size: x-large;">&#10095;</div>
+                    <span class="w3-badge demo2 w3-border w3-transparent w3-hover-white" onclick="currentDiv3(5)"></span>
+                    <span class="w3-badge demo2 w3-border w3-transparent w3-hover-white" onclick="currentDiv3(6)"></span>
+                </div>  -->
         </div>
     </div>
 
@@ -135,13 +176,14 @@
             <div class="w3-content w3-display-container" style="max-width:450px; float: right; margin-right: 10px;">
                 <img class="mySlides2 w3-round-large" src="images/products/visualdatamap.png" style="width:100%; height: 350px; box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.1);">
                 <img class="mySlides2 w3-round-large" src="images/products/routemaps.jpg" style="width:100%; height: 350px; box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.1);">
-                <div class="w3-center w3-container w3-section w3-large w3-text-white w3-display-bottommiddle" style="width:100%">
+                <div class="w3-center w3-container w3-section w3-large w3-text-black w3-display-bottommiddle" style="width:100%">
                     <div class="w3-left w3-hover-text-khaki" onclick="plusDivs2(-1)" style="font-size: x-large;">&#10094;</div>
                     <div class="w3-right w3-hover-text-khaki" onclick="plusDivs2(1)" style="font-size: x-large;">&#10095;</div>
                     <span class="w3-badge demo2 w3-border w3-transparent w3-hover-white" onclick="currentDiv2(3)"></span>
                     <span class="w3-badge demo2 w3-border w3-transparent w3-hover-white" onclick="currentDiv2(4)"></span>
                 </div>
             </div>
+
         </div>
     </div>
 
@@ -163,21 +205,13 @@
             <div class="w3-content w3-display-container" style="max-width:450px; float: right; margin-right: 10px;">
                 <img class="mySlides w3-round-large" src="images/products/rpi.jpg" style="width:100%; box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.1);">
                 <img class="mySlides w3-round-large" src="images/products/jetson.jpg" style="width:100%; box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.1);">
-                <div class="w3-center w3-container w3-section w3-large w3-text-white w3-display-bottommiddle" style="width:100%">
+                <div class="w3-center w3-container w3-section w3-large w3-text-black w3-display-bottommiddle" style="width:100%">
                     <div class="w3-left w3-hover-text-khaki" onclick="plusDivs(-1)" style="font-size: x-large;">&#10094;</div>
                     <div class="w3-right w3-hover-text-khaki" onclick="plusDivs(1)" style="font-size: x-large;">&#10095;</div>
                     <span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(1)"></span>
                     <span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(2)"></span>
                 </div>
             </div>
-            <!-- <div class="buttonimage">
-                <button class="btn" onclick="document.getElementById('edgedevice').src='images/products/rpi.jpg'"><i class="fas fa-chevron-left"></i></button>
-
-                <img class="w3-image w3-round-large" style="box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.1);"; src="images/products/jetson.jpg"
-                alt="NVIDIA Jetson Nano" width="450px" id="edgedevice">
-
-                <button class="btn" onclick="document.getElementById('edgedevice').src='images/products/jetson.jpg'" style="display: inline-block; padding"><i class="fas fa-chevron-right"></i></button>
-            </div> -->
         </div>
     </div>
 
@@ -308,7 +342,41 @@
         </div>
         <p>© STARPLAN. All rights reserved.</a></p>
     </footer>
-        <script>
+
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+
+    <script>
+        var slideIndex3 = 5;
+        showDivs3(slideIndex3);
+
+        function plusDivs3(n) {
+          showDivs3(slideIndex3 += n);
+        }
+
+        function currentDiv3(n) {
+          showDivs3(slideIndex3 = n);
+        }
+
+        function showDivs3(n) {
+          var i;
+          var x = document.getElementsByClassName("mySlides3");
+          var dots = document.getElementsByClassName("demo3");
+          if (n > x.length) {slideIndex3 = 1}
+          if (n < 1) {slideIndex3 = x.length}
+          for (i = 0; i < x.length; i++) {
+            x[i].style.display = "none";  
+          }
+          for (i = 0; i < dots.length; i++) {
+            dots[i].className = dots[i].className.replace(" w3-white", "");
+          }
+          x[slideIndex3-1].style.display = "block";  
+          dots[slideIndex3-1].className += " w3-white";
+        }
+    </script>
+
+    <script>
         var slideIndex2 = 3;
         showDivs2(slideIndex2);
 
