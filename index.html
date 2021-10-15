@@ -29,6 +29,84 @@
 .carousel-control.next {
   margin-right: -255px;
 }
+
+@media (min-width: 768px) {
+
+    /* show 4 items */
+    .carousel-inner .active,
+    .carousel-inner .active + .carousel-item,
+    .carousel-inner .active + .carousel-item + .carousel-item,
+    .carousel-inner .active + .carousel-item + .carousel-item + .carousel-item  {
+        display: block;
+    }
+    
+    .carousel-inner .carousel-item.active:not(.carousel-item-right):not(.carousel-item-left),
+    .carousel-inner .carousel-item.active:not(.carousel-item-right):not(.carousel-item-left) + .carousel-item,
+    .carousel-inner .carousel-item.active:not(.carousel-item-right):not(.carousel-item-left) + .carousel-item + .carousel-item,
+    .carousel-inner .carousel-item.active:not(.carousel-item-right):not(.carousel-item-left) + .carousel-item + .carousel-item + .carousel-item {
+        transition: none;
+    }
+    
+    .carousel-inner .carousel-item-next,
+    .carousel-inner .carousel-item-prev {
+      position: relative;
+      transform: translate3d(0, 0, 0);
+    }
+    
+    /* last visible item + 1 */
+    .carousel-inner .active.carousel-item + .carousel-item + .carousel-item + .carousel-item + .carousel-item {
+        position: absolute;
+        top: 0;
+        right: -25%;
+        z-index: -1;
+        display: block;
+        visibility: visible;
+    }
+    
+    /* left or forward direction */
+    .active.carousel-item-left + .carousel-item-next.carousel-item-left,
+    .carousel-item-next.carousel-item-left + .carousel-item,
+    .carousel-item-next.carousel-item-left + .carousel-item + .carousel-item,
+    .carousel-item-next.carousel-item-left + .carousel-item + .carousel-item + .carousel-item,
+    .carousel-item-next.carousel-item-left + .carousel-item + .carousel-item + .carousel-item + .carousel-item {
+        position: relative;
+        transform: translate3d(-100%, 0, 0);
+        visibility: visible;
+    }
+    
+    /* farthest right hidden item must be abso position for animations */
+    .carousel-inner .carousel-item-next.carousel-item-left {
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: -1;
+        display: block;
+        visibility: visible;
+    }
+    
+    .carousel-inner .carousel-item-prev.carousel-item-right {
+        position: absolute;
+        top: 0;
+        left: -25%;
+        z-index: -1;
+        display: block;
+        visibility: visible;
+    }
+    
+    /* right or prev direction */
+    .active.carousel-item-right + .carousel-item-prev.carousel-item-right,
+    .carousel-item-prev.carousel-item-right + .carousel-item,
+    .carousel-item-prev.carousel-item-right + .carousel-item + .carousel-item,
+    .carousel-item-prev.carousel-item-right + .carousel-item + .carousel-item + .carousel-item,
+    .carousel-item-prev.carousel-item-right + .carousel-item + .carousel-item + .carousel-item + .carousel-item {
+        position: relative;
+        transform: translate3d(100%, 0, 0);
+        display: block;
+        visibility: visible;
+    }
+
+}
+
 </style>
 
 <script src="https://kit.fontawesome.com/yourcode.js" crossorigin="anonymous"></script>
@@ -138,35 +216,100 @@
     <div class="w3-container w3-light-grey" style="padding-top:50px; padding-bottom:50px;">
         <div style="margin-left: 50px; margin-right: 50px;">
         <h3 class="w3-center"><b>NEWS AND UPDATES</b></h3>
-            <div class="responsive">
+            <div class="container-fluid">
+                <div id="carouselExample" class="carousel slide" data-ride="carousel" data-interval="12000">
+                    <div class="carousel-inner row w-100 mx-auto flex-nowrap" role="listbox">
+                        <div class="carousel-item col-md-3 active">
+                            <img class="w3-image w3-round-large img-fluid mx-auto d-block" src="images/news/onlineworkshoppub.png" alt="News 4"style="margin-left: 5px; box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.1); height: 200px; object-fit: cover; object-position: top; width: 400rem;" >
+                            <div class="bottom-left">
+                                <a href="downloads.html">STARPLAN Team Online Workshop<br>August 2021</a>
+                            </div>
+                        </div>
+                        <div class="carousel-item col-md-3">
+                            <img class="w3-image w3-round-large img-fluid mx-auto d-block" src="images/news/asubg.jpg" alt="News 3"
+                            style="margin-left: 5px; box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.1); height: 200px; object-fit: cover; object-position: top; width: 400rem;">
+                            <div class="bottom-left">
+                                <a href="https://www.facebook.com/asuilovethee/photos/read-asu-enters-moa-with-dlsu-aklan-provl-government-dr-emily-m-arangote-represe/288482332985686/">ASU enters MOA with DLSU, Aklan Prov'l Government<br>May 2021</a>
+                            </div>
+                        </div>
+                        <div class="carousel-item col-md-3">
+                            <img class="w3-image w3-round-large img-fluid mx-auto d-block" src="images/news/onlinearticle.png" alt="News 2"
+                                style="margin-left: 5px; box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.1); height: 200px; object-fit: cover; object-position: top; width: 400rem;">
+                            <div class="bottom-left">
+                                <a href="https://dailyguardian.com.ph/why-western-visayas-could-host-smart-cities/">Why Western Visayas could host smart cities<br>October 2020</a>
+                            </div>
+                        </div>
+                        <div class="carousel-item col-md-3">
+                            <img class="w3-image w3-round-large img-fluid mx-auto d-block" src="images/news/webinar.jpg" alt="News 1"
+                            style="margin-left: 5px; box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.1); height: 200px; object-fit: cover; object-position: top; width: 400rem;">
+                            <div class="bottom-left">
+                                <a href="downloads.html">DOST PCIEERD and STARPLAN Team Online Workshop<br>September 2020</a>
+                            </div>
+                        </div>
+                        <div class="carousel-item col-md-3">
+                            <img class="w3-image w3-round-large img-fluid mx-auto d-block" src="images/news/onlineworkshoppub.png" alt="News 4"
+                            style="margin-left: 5px; box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.1); height: 200px; object-fit: cover; object-position: top; width: 400rem;" >
+                            <div class="bottom-left">
+                                <a href="downloads.html">STARPLAN Team Online Workshop<br>August 2021</a>
+                            </div>
+                        </div>
+                        <!-- <div class="carousel-item col-md-3">
+                            <img class="img-fluid mx-auto d-block" src="//via.placeholder.com/600x400?text=6" alt="slide 6">
+                        </div>
+                        <div class="carousel-item col-md-3">
+                            <img class="img-fluid mx-auto d-block" src="//via.placeholder.com/600x400?text=7" alt="slide 7">
+                        </div>
+                        <div class="carousel-item col-md-3">
+                            <img class="img-fluid mx-auto d-block" src="//via.placeholder.com/600x400?text=8" alt="slide 7">
+                        </div> -->
+                    </div>
+                    <!-- <a class="carousel-control-prev" href="#carouselExample" role="button" data-slide="prev" id="myCarousel">
+                        <i class="fa fa-chevron-left fa-lg text-muted"></i>
+                        <span class="sr-only">Previous</span>
+                    </a>
+                    <a class="carousel-control-next text-faded" href="#carouselExample" role="button" data-slide="next" id="myCarousel">
+                        <i class="fa fa-chevron-right fa-lg text-muted"></i>
+                        <span class="sr-only">Next</span>
+                    </a> -->
+                    <a class="carousel-control-prev" href="#carouselExample" role="button" data-slide="prev" id="myCarousel">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Previous</span>
+                    </a>
+                    <a class="carousel-control-next" href="#carouselExample" role="button" data-slide="next" id="myCarousel">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Next</span>
+                    </a>
+                </div>
+            </div>
+            <!-- <div class="responsive">
                 <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
                     <div class="carousel-inner">
                         <div class="carousel-item active">
                             <div class="w3-row-padding">
                                 <div class="column" style="float: left; width:25%; padding: 20px;">
-                                    <img class="w3-image w3-round-large d-block w-100" src="images/news/onlineworkshoppub.png" alt="News 4"
-                                    style="margin-left: 5px; box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.1); height: 200px; object-fit: cover; object-position: top; width: 400px;" >
+                                    <img class="w3-image w3-round-large d-block w-100 img-fluid" src="images/news/onlineworkshoppub.png" alt="News 4"
+                                    style="margin-left: 5px; box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.1); height: 200px; object-fit: cover; object-position: top; width: 400rem;" >
                                     <div class="bottom-left">
                                         <a href="downloads.html">STARPLAN Team Online Workshop<br>August 2021</a>
                                     </div>
                                 </div>
                                 <div class="column" style="float: left; width:25%; padding: 20px;">
-                                    <img class="w3-image w3-round-large d-block w-100" src="images/news/asubg.jpg" alt="News 3"
-                                    style="margin-left: 5px; box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.1); height: 200px; object-fit: cover; object-position: top; width: 400px;">
+                                    <img class="w3-image w3-round-large d-block w-100 img-fluid" src="images/news/asubg.jpg" alt="News 3"
+                                    style="margin-left: 5px; box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.1); height: 200px; object-fit: cover; object-position: top; width: 400rem;">
                                     <div class="bottom-left">
                                         <a href="https://www.facebook.com/asuilovethee/photos/read-asu-enters-moa-with-dlsu-aklan-provl-government-dr-emily-m-arangote-represe/288482332985686/">ASU enters MOA with DLSU, Aklan Prov'l Government<br>May 2021</a>
                                     </div>
                                 </div>
                                 <div class="column" style="float: left; width:25%; padding: 20px;">
-                                    <img class="w3-image w3-round-large d-block w-100" src="images/news/onlinearticle.png" alt="News 2"
-                                    style="margin-left: 5px; box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.1); height: 200px; object-fit: cover; object-position: top; width: 400px;">
+                                    <img class="w3-image w3-round-large d-block w-100 img-fluid" src="images/news/onlinearticle.png" alt="News 2"
+                                    style="margin-left: 5px; box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.1); height: 200px; object-fit: cover; object-position: top; width: 400rem;">
                                     <div class="bottom-left">
                                         <a href="https://dailyguardian.com.ph/why-western-visayas-could-host-smart-cities/">Why Western Visayas could host smart cities<br>October 2020</a>
                                     </div>
                                 </div>
                                 <div class="column" style="float: left; width:25%; padding: 20px;">
-                                    <img class="w3-image w3-round-large " src="images/news/webinar.jpg" alt="News 1"
-                                    style="margin-left: 5px; box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.1); height: 200px; object-fit: cover; object-position: top; width: 400px;">
+                                    <img class="w3-image w3-round-large d-block w-100 img-fluid" src="images/news/webinar.jpg" alt="News 1"
+                                    style="margin-left: 5px; box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.1); height: 200px; object-fit: cover; object-position: top; width: 400rem;">
                                     <div class="bottom-left">
                                         <a href="downloads.html">DOST PCIEERD and STARPLAN Team Online Workshop<br>September 2020</a>
                                     </div>
@@ -175,8 +318,8 @@
                     </div>
                     <div class="carousel-item">
                         <div class="column" style="float: left; width:25%; padding: 20px;">
-                            <img class="w3-image w3-round-large d-block w-100" src="images/news/onlineworkshoppub.png" alt="News 4"
-                            style="margin-left: 5px; box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.1); height: 200px; object-fit: cover; object-position: top; width: 400px;" >
+                            <img class="w3-image w3-round-large d-block w-100 img-fluid" src="images/news/onlineworkshoppub.png" alt="News 4"
+                            style="margin-left: 5px; box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.1); height: 200px; object-fit: cover; object-position: top; width: 400rem;" >
                             <div class="bottom-left">
                                 <a href="downloads.html">STARPLAN Team Online Workshop<br>August 2021</a>
                             </div>
@@ -192,7 +335,7 @@
                     <span class="sr-only">Next</span>
                     </a>
                 </div>
-            </div>
+            </div> -->
             </span>
         </div>
     </div>
@@ -252,6 +395,29 @@
           ]
         });
     </script> -->
+
+    <script>
+        $('#carouselExample').on('slide.bs.carousel', function (e) {
+
+            var $e = $(e.relatedTarget);
+            var idx = $e.index();
+            var itemsPerSlide = 4;
+            var totalItems = $('.carousel-item').length;
+            
+            if (idx >= totalItems-(itemsPerSlide-1)) {
+                var it = itemsPerSlide - (totalItems - idx);
+                for (var i=0; i<it; i++) {
+                    // append slides to end
+                    if (e.direction=="left") {
+                        $('.carousel-item').eq(i).appendTo('.carousel-inner');
+                    }
+                    else {
+                        $('.carousel-item').eq(0).appendTo('.carousel-inner');
+                    }
+                }
+            }
+        });
+    </script>
 
     <script>
         // Modal Image Gallery
